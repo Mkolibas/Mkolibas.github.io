@@ -15,3 +15,7 @@ body {
   a{
     color: blueviolet;
   }
+  .medium-image{
+    width: 300px;
+    height: auto;
+  }
