@@ -8,17 +8,19 @@ body {
   }
   
   p {
-    font-family: verdana;
+    font-family: auto;
     font-size: 20px;
   }
 
   a{
     color: blueviolet;
   }
+  
   .medium-image{
     width: 300px;
     height: auto;
   }
+  
   .center{
     display: flex;
     flex-direction: column;
