@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Kolibas || Macho Kangaroo || ITIS 3135 || Forms</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        /* Center-align the header content */
+        header,
+        footer,
+        title,
+        h2 {
+            text-align: center;
+        }
+
+        /* Styling the button */
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styling the input elements */
+        input {
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Matthew Kolibas || Macho Kangaroo || ITIS 3135</h1>
+        <nav>
+            ||
+            <a href="./">Homepage</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="tables.html">Tables</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+        </nav>
+    </header>
+    <main>
+        <h2>Matthew Kolibas || Macho Kangaroo || ITIS 3135 || Forms</h2>
+
+        <form action="#" method="post">
+            <h2>Checkout</h2>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>T-Shirt Details</legend>
+                <div class="form-group">
+                    <label for="tshirtSize">T-Shirt Size:</label>
+                    <select id="tshirtSize" name="tshirtSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">X-Large</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">T-Shirt Color:</label>
+                    <select id="color" name="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="black">Black</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping and Payment</legend>
+                <div class="form-group">
+                    <label>Shipping Method:</label>
+                    <input type="radio" id="standardShipping" name="shipping" value="standard">
+                    <label for="standardShipping">Standard Shipping</label>
+                    <input type="radio" id="expressShipping" name="shipping" value="express">
+                    <label for="expressShipping">Express Shipping</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Payment Method:</label>
+                    <input type="radio" id="creditCard" name="payment" value="creditCard">
+                    <label for="creditCard">Credit Card</label>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <button type="reset">Reset</button>
+                <button type="submit">Place Order</button>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/mkolibas/">Charlotte.edu</a>
+            ||
+            <a href="https://github.com/Mkolibas/">Github</a>
+            ||
+            <a href="https://mkolibas.github.io/">Github.io</a>
+            ||
+            <a href="https://www.freecodecamp.org/Mkolibas">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/Mkolibas">Codecademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/matthew-kolibas-916982205/">LinkedIn</a>
+        </nav>
+        <p>Page Built by <a href="company/index.html">Kolib Enterprises</a>&copy; 2023</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
+    </footer>
+</body>
+
+</html>
