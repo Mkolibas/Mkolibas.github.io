@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Kolibas || Macho Kangaroo || ITIS 3135 || Tables</title>
+    
+    <style>
+        /* Center-align the table data */
+        table {
+            width: 50%;
+            margin: 0 auto; /* Center the table horizontally */
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+            text-align: center; /* Center-align table cell content */
+        }
+
+        /* Center-align the ordered list */
+        ol {
+            width: 50%;
+            margin: 0 auto; /* Center the ordered list horizontally */
+            text-align: left; /* Reset text alignment for list items */
+        }
+
+        li {
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+
+        /* Header Row Style */
+        tr.header {
+            background-color: #333;
+            color: #A900FE;
+        }
+
+        /* Odd Rows Style*/
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        /* Even Rows Style*/
+        tr:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        /* Footer Row Style*/
+        tr.total {
+            font-weight: bold;
+        }
+        /* Center-align the caption */
+        figcaption {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1> Matthew Kolibas || Macho Kangaroo || ITIS 3135</h1>
+        <nav>
+            <a href="./">Homepage</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="/">Back to Main Site</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Matthew Kolibas || Macho Kangaroo || ITIS 3135 || Tables</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>D.I. von Briesen - dvonbri1@uncc.edu - 1</li>
+            <li>Esam Abdullah - eabdullah@gmail.com - 31</li>
+            <li>Medina Gomez - gomez_med8@yahoo.com - 3</li>
+            <li>John Smith - jsmith@mycompany.com - 5</li>
+            <li>Jane Doe - janedoe@gmail.com - 12</li>
+            <li>Mickey Mouse - mickey@disney.com - 50</li>
+            <li>Lisa Simpson - lisa@simpsons.com - 20</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>D.I. von Briesen</td>
+                <td>dvonbri1@uncc.edu</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Esam Abdullah</td>
+                <td>eabdullah@gmail.com</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Medina Gomez</td>
+                <td>gomez_med8@yahoo.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>jsmith@mycompany.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>janedoe@gmail.com</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Mickey Mouse</td>
+                <td>mickey@disney.com</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Lisa Simpson</td>
+                <td>lisa@simpsons.com</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr class="header">
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Marketing</td>
+                    <td>D.I. von Briesen</td>
+                    <td>dvonbri1@uncc.edu</td>
+                    <td>1,000,000.01</td>
+                    <td>$83,333.34</td>
+                </tr>
+                <tr>
+                    <td>Esam Abdullah</td>
+                    <td>eabdullah@gmail.com</td>
+                    <td>25,000</td>
+                    <td>$2,083.33</td>
+                </tr>
+                <tr>
+                    <td>Sales</td>
+                    <td>Medina Gomez</td>
+                    <td>gomez_med8@yahoo.com</td>
+                    <td>55,000</td>
+                    <td>$4,583.33</td>
+                </tr>
+                <tr class="total">
+                    <th colspan="3">Total Years of Service</th>
+                    <td>3</td>
+                    <td>$89,999.34</td>
+                </tr>
+            </table>
+        </figure>
+
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/mkolibas/">Charlotte.edu</a>
+            ||
+            <a href="https://github.com/Mkolibas/">Github</a>
+            ||
+            <a href="https://mkolibas.github.io/">Github.io</a>
+            ||
+            <a href="https://www.freecodecamp.org/Mkolibas">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/Mkolibas">Codecademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/matthew-kolibas-916982205/">LinkedIn</a>
+        </nav>
+        <p>Page Built by <a href="company/index.html">Kolib Enterprises</a>&copy; 2023</p>
+            <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>           
+    </footer>
+</body>
+</html>
