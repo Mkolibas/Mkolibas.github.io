@@ -88,6 +88,24 @@ function kangarooJumpBoost() {
     document.getElementById("jumpResult").textContent = `Result: ${result}`;
 }
 
+const kangarooCodeSnippets = [
+    "Kangaroo.hop(5);",
+    "Kangaroo.eat('grass');",
+];
+
+//function used to generate code for kangarooCodeSnippets
+function generateCode() {
+    const randomIndex = Math.floor(Math.random() * kangarooCodeSnippets.length);
+    const code = kangarooCodeSnippets[randomIndex];
+    document.getElementById("codeSnippet").textContent = `Generated Code: ${code}`;
+}
+
+//knock knock joke
+function tellJoke() {
+    const joke = "Knock knock.\nWho's there?\nKangaroo.\nKangaroo who?\nKangaroo-all over the place!";
+    document.getElementById("jokeResponse").textContent = joke;
+}
+
 // Add an event listener to the form submission
 const userForm = document.getElementById("userForm");
 userForm.addEventListener("submit", handleSubmit);
