@@ -1,5 +1,6 @@
 // Time Function
 function displayTime() {
+    
     const now = new Date();
     const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][now.getDay()];
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -89,6 +90,7 @@ function kangarooJumpBoost() {
 }
 
 const kangarooCodeSnippets = [
+    //Area to hold code snippets can add more later for randomization
     "Kangaroo.hop(5);",
     "Kangaroo.eat('grass');",
 ];
@@ -126,8 +128,12 @@ function convertToAUD() {
     }
 }
 
+//Starting Count
+let hopCount = 0;
+
 function hophop() {
-    const hop = "1 Hop this time!";
+    hopCount++; // Increment the count
+    const hop = `${hopCount} Hop(s) this time!`; //Display Count in the sentence
     document.getElementById("hopResponse").textContent = hop;
 }
 
