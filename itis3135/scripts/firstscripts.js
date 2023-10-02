@@ -82,6 +82,12 @@ function handleSubmit(event) {
     alert(message);
 }
 
+function kangarooJumpBoost() {
+    const input = document.getElementById("jumpInput").value;
+    const result = input * 10;
+    document.getElementById("jumpResult").textContent = `Result: ${result}`;
+}
+
 // Add an event listener to the form submission
 const userForm = document.getElementById("userForm");
 userForm.addEventListener("submit", handleSubmit);
