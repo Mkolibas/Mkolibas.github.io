@@ -20,16 +20,16 @@ function handleSubmit(event) {
     const favoriteNumberInput = document.getElementById("favoriteNumber");
     let favoriteNumber = parseInt(favoriteNumberInput.value);
 
-    // Check for negative or decimal
+    // Check if the input is a negative number or a decimal
     if (isNaN(favoriteNumber) || favoriteNumber < 0) {
-        // Use Math.abs to convert negative numbers to positive using absolute value
+        // Convert negative numbers to positive (absolute value)
         favoriteNumber = Math.abs(favoriteNumber);
     }
 
-    // Simple Rounding
+    // Round decimal numbers to the nearest integer
     favoriteNumber = Math.round(favoriteNumber);
 
-    // Switch Statement used to determine Polygon based on the number input
+    // Determine the name of the polygon based on the number of sides
     let polygonName = "";
     switch (favoriteNumber) {
         case 0:
@@ -70,9 +70,9 @@ function handleSubmit(event) {
             break;
     }
 
-    //Greeting 
-    const greeting = document.getElementById("greeting");
-    greeting.innerHTML = `The Your Company Name welcomes you, ${name}!<br>We're glad you are doing ${mood}!<br>Your favorite number corresponds to a "${polygonName}".`;
+    // Display the information in a popup
+    const message = `Kolib Enterprises welcomes you, ${name}!\nWe're glad you are doing ${mood}!\nYour favorite number corresponds to a "${polygonName}".`;
+    alert(message);
 }
 
 // Add an event listener to the form submission
