@@ -73,9 +73,6 @@ function handleSubmit(event) {
     //Greeting 
     const greeting = document.getElementById("greeting");
     greeting.innerHTML = `The Your Company Name welcomes you, ${name}!<br>We're glad you are doing ${mood}!<br>Your favorite number corresponds to a "${polygonName}".`;
-
-    // Display the polygon
-    alert(`Your favorite number corresponds to a "${polygonName}".`);
 }
 
 // Add an event listener to the form submission
