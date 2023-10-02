@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +15,9 @@
         }
     </style>
 </head>
-
 <body>
     <header>
-        <script src="scripts/firstscripts.js"></script>
+        <script src="firstscripts.js"></script>
         <script src="scripts/defaultscripts.js"></script>
         <h1> Matthew Kolibas || Macho Kangaroo || ITIS 3135</h1>
         <nav>
@@ -40,21 +38,23 @@
             ||
         </nav>
     </header>
+    
     <main>
 
         <button onclick="scriptTest();">Click me</button>
 
-
+        
         <h3 id="timeDisplay">Today is 8:45 PM on Sunday, 1 October, 2023</h3>
-        <form id="userForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" required><br><br>
-            <label for="mood">How are you feeling?</label>
-            <input type="text" id="mood" required><br><br>
-            <label for="favoriteNumber">Favorite Number:</label>
-            <input type="text" id="favoriteNumber" required><br><br>
+        <form id="nameMoodForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="mood">Mood:</label>
+            <input type="text" id="mood" name="mood" required><br><br>
+    
             <input type="submit" value="Submit">
         </form>
+        <script src="scripts/nameandmood.js"></script>
     </main>
     <footer>
         <nav>
@@ -81,5 +81,4 @@
         </a>
     </footer>
 </body>
-
 </html>
