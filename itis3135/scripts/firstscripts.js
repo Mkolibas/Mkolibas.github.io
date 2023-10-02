@@ -1,5 +1,5 @@
 // Time Function
-/*
+
 function displayTime() {
     const now = new Date();
     const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][now.getDay()];
@@ -13,7 +13,7 @@ function displayTime() {
     const timeDisplay = document.getElementById("timeDisplay");
     timeDisplay.textContent = `Today is ${hours}:${minutes < 10 ? '0' : ''}${minutes}${hours < 12 ? 'am' : 'pm'} on ${dayOfWeek}, ${date} ${month}, ${year}`;
 }
-*/
+
 
 
 // Used to handle the data submitted in the form
@@ -84,4 +84,4 @@ const userForm = document.getElementById("userForm");
 userForm.addEventListener("submit", handleSubmit);
 
 // Used to display the current time
-//displayTime();
+displayTime();
