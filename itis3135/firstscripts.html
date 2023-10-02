@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Kolibas || Macho Kangaroo || ITIS 3135 || Home </title>
+    <title>Matthew Kolibas || Macho Kangaroo || ITIS 3135 || Contract</title>
     <link rel="stylesheet" href="styles/default.css">
     <style>
         /* Center-align the header content */
         header,
         footer,
         title,
-        h2,
-        p {
+        h2 {
             text-align: center;
         }
     </style>
@@ -35,13 +34,20 @@
             ||
             <a href="WebsiteEvaluator.html">Website Evaluator</a>
             ||
-            <a href="firstscripts.html">First Scripts</a>
-            ||
         </nav>
     </header>
     <main>
-        <h2>Matthew Kolibas || Macho Kangaroo || ITIS 3135 || Home</h2>
-        <p> This is all my ITIS 3135 stuff</p>
+        <h3 id="timeDisplay">Today is 8:45 PM on Sunday, 1 October, 2023</h3>
+        <form id="userForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="mood">How are you feeling?</label>
+            <input type="text" id="mood" required><br><br>
+            <label for="favoriteNumber">Favorite Number:</label>
+            <input type="text" id="favoriteNumber" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="greeting"></div>
     </main>
     <footer>
         <nav>
@@ -57,13 +63,16 @@
             ||
             <a href="https://www.linkedin.com/in/matthew-kolibas-916982205/">LinkedIn</a>
         </nav>
-        <p>Page Built by <a href="company/index.html">KolibEnterprises</a>&copy; 2023</p>
-            <a href="https://validator.w3.org/check?uri=referer">
-            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-            </a>           
+        <p>Page Built by <a href="company/index.html">Kolib Enterprises</a>&copy; 2023</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
     </footer>
+    <script src="firstscripts.js"></script>
 </body>
 </html>
