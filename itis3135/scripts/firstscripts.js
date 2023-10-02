@@ -1,5 +1,4 @@
 // Time Function
-
 function displayTime() {
     const now = new Date();
     const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][now.getDay()];
@@ -14,7 +13,11 @@ function displayTime() {
     timeDisplay.textContent = `Today is ${hours}:${minutes < 10 ? '0' : ''}${minutes}${hours < 12 ? 'am' : 'pm'} on ${dayOfWeek}, ${date} ${month}, ${year}`;
 }
 
+// Call displayTime() initially to set the time
+displayTime();
 
+// Set an interval to call displayTime() every second (1000 milliseconds)
+setInterval(displayTime, 1000);
 
 // Used to handle the data submitted in the form
 function handleSubmit(event) {
@@ -82,6 +85,3 @@ function handleSubmit(event) {
 // Add an event listener to the form submission
 const userForm = document.getElementById("userForm");
 userForm.addEventListener("submit", handleSubmit);
-
-// Used to display the current time
-displayTime();
