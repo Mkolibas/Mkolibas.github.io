@@ -128,7 +128,7 @@ function convertToAUD() {
 
 function hophop() {
     const hop = "1 Hop this time!";
-    document.getElementById("hopResponse").textContent = joke;
+    document.getElementById("hopResponse").textContent = hop;
 }
 
 // Add an event listener to the form submission
