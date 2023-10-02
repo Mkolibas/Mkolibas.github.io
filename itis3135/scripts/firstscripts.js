@@ -106,6 +106,26 @@ function tellJoke() {
     document.getElementById("jokeResponse").textContent = joke;
 }
 
+function convertToAUD() {
+    // Prompt the user for a USD amount
+    const usdAmount = parseFloat(prompt("Enter the amount in USD:"));
+
+    // Check for usable number
+    if (!isNaN(usdAmount)) {
+        // Defining the exchange rate - not going to be current or anything since that seems pretty hard to do but may be simple like the clock
+        const exchangeRate = 1.35; // I believe this is the current exchange rate as of 10/1/2023
+
+        // Calculate AUD
+        const audAmount = usdAmount * exchangeRate;
+
+        // Display the result 
+        alert(`Equivalent amount in AUD: ${audAmount.toFixed(2)} AUD`);
+    } else {
+        // If user imputs an invalid number
+        alert("Please enter a valid number for the USD amount.");
+    }
+}
+
 // Add an event listener to the form submission
 const userForm = document.getElementById("userForm");
 userForm.addEventListener("submit", handleSubmit);
