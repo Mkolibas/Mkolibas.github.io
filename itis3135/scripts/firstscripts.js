@@ -126,6 +126,11 @@ function convertToAUD() {
     }
 }
 
+function hophop() {
+    const hop = "1 Hop this time!";
+    document.getElementById("hopResponse").textContent = joke;
+}
+
 // Add an event listener to the form submission
 const userForm = document.getElementById("userForm");
 userForm.addEventListener("submit", handleSubmit);
