@@ -3,7 +3,7 @@
 // Get the current URL (page)
 var currentURL = window.location.href;
 
-// Function to load the header from Header.html
+// Function to load the header from header.html
 function loadHeader() {
   var headerContainer = document.getElementById('header-container');
 
@@ -28,8 +28,8 @@ function loadHeader() {
     }
   };
 
-  // Request the Header.html file
-  xhr.open('GET', 'Header.html', true);
+  // Request the header.html file
+  xhr.open('GET', 'header.html', true);
   xhr.send();
 }
 
