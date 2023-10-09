@@ -101,8 +101,8 @@ figcaption {
 }
 
 .reset-link {
-  display: block;        /* Ensures the link takes the full width */
-  margin: 20px auto;     /* Centers the link */
+  display: block;        
+  margin: 20px auto;     
   padding: 10px 15px;
   background-color: #007BFF;
   color: white;
@@ -111,7 +111,7 @@ figcaption {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: fit-content;   /* Makes the width as big as the content, no bigger */
+  width: fit-content;   
 }
 
 .reset-link:hover {
