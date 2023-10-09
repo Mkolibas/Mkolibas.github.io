@@ -70,19 +70,6 @@ td {
   /* Center-align table cell content */
 }
 
-/* Center-align the ordered list */
-ol {
-  width: 50%;
-  margin: 0 auto;
-  /* Center the ordered list horizontally */
-  text-align: left;
-  /* Reset text alignment for list items */
-}
-
-li {
-  text-align: center;
-}
-
 h3 {
   text-align: center;
 }
