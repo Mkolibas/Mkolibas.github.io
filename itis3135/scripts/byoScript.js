@@ -1,3 +1,4 @@
+//
 let courseCount = 1;
 
 function addCourse() {
@@ -23,22 +24,20 @@ function removeCourse(courseNumber) {
     }
 }
 
-document.getElementById('infoForm').addEventListener('submit', function(event) {
+document.getElementById('infoForm').addEventListener('submit', function (event) {
     event.preventDefault();
-    
+
     if (!validateForm()) {
         alert("Please fill out all required fields and ensure the image is in PNG or JPG format.");
         return;
     }
-    
 
     const formData = new FormData(event.target);
     const output = document.getElementById('output');
     const imageFile = formData.get('image');
     const imageUrl = URL.createObjectURL(imageFile);
 
-    output.innerHTML = `
-        
+    output.innerHTML = `  
         <h2 text-align="center" ><strong> ${formData.get('name')} || ${formData.get('mascot')}</strong></h2>
         
         <figure>
@@ -55,9 +54,9 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
         <ul>
             ${Array.from(formData.keys()).filter(key => key.startsWith('course')).map(key => `<li>${formData.get(key)}</li>`).join('')}
         </ul>
-        <li><strong>Funny thing?</strong> ${formData.get('funnyThing')}</li>
-        <li><strong>Anything else?</strong> ${formData.get('anythingElse')}</li>
-        <li><strong>I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available. -  ${formData.get('name')}</li>
+        <li><strong>Something Funny?</strong> ${formData.get('I love Cats')}</li>
+        <li><strong>Fun Facts?</strong> ${formData.get('I build pcs')}</li>
+        <li><strong>I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available. -  ${formData.get('name')}</li>
         <ul>
     `;
 
@@ -68,16 +67,16 @@ document.getElementById('infoForm').addEventListener('submit', function(event) {
     const resetLink = document.createElement('a');
     resetLink.href = '#';
     resetLink.innerText = 'Fill out the form again';
-    resetLink.classList.add('reset-link');  
-    resetLink.addEventListener('click', function(e) {
-        e.preventDefault();  
+    resetLink.classList.add('reset-link');
+    resetLink.addEventListener('click', function (e) {
+        e.preventDefault();
         output.innerHTML = '';
         document.getElementById('infoForm').style.display = 'block';
     });
     output.appendChild(resetLink);
 });
 
-
+// Used to check if the form is completed if so we return true allowing it to pass
 function validateForm() {
     const form = document.getElementById('infoForm');
 
