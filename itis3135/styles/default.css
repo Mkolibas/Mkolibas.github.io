@@ -1,30 +1,135 @@
 body {
-    background-color: lightblue;
-    font-family: "Arial", sans-serif;
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: "Arial", sans-serif;
-    font-size: 20px;
-  }
+  background-color: lightblue;
+  font-family: Verdana, Tahoma, sans-serif;
+}
 
-  a{
-    color: blueviolet;
-  }
-  
-  .medium-image{
-    width: 300px;
-    height: auto;
-  }
-  
-  .center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.medium-image {
+  width: 300px;
+  height: auto;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header,
+h2,
+footer {
+  text-align: center;
+}
+
+main {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+a {
+  color: rgb(234, 3, 76);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(5, 255, 230)
+}
+
+img {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+/* Center-align the table data */
+table {
+  width: 50%;
+  margin: 0 auto;
+  /* Center the table horizontally */
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  /* Center-align table cell content */
+}
+
+/* Center-align the ordered list */
+ol {
+  width: 50%;
+  margin: 0 auto;
+  /* Center the ordered list horizontally */
+  text-align: left;
+  /* Reset text alignment for list items */
+}
+
+li {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+figure table tr.header {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Odd Rows Style*/
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Even Rows Style*/
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+/* Footer Row Style*/
+tr.total {
+  font-weight: bold;
+}
+
+/* Center-align the caption */
+figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+.reset-link {
+  display: block;        /* Ensures the link takes the full width */
+  margin: 20px auto;     /* Centers the link */
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;   /* Makes the width as big as the content, no bigger */
+}
+
+.reset-link:hover {
+  background-color: #0056b3;
+}
+#infoForm {
+font-family: Arial, sans-serif;
+}
