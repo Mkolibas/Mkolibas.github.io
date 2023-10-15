@@ -14,7 +14,7 @@ p {
 }
 
 .medium-image {
-  width: 300px;
+  width: 100%; /* Make the image responsive */
   height: auto;
 }
 
@@ -32,8 +32,7 @@ footer {
 }
 
 main {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 0 10px; /* Adjust margins for small devices */
 }
 
 a {
@@ -42,12 +41,12 @@ a {
 }
 
 a:hover {
-  color: rgb(5, 255, 230)
+  color: rgb(5, 255, 230);
 }
 
 img {
-  height: 50%;
-  width: 50%;
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
   text-align: center;
 }
 
@@ -57,7 +56,7 @@ figure {
 
 /* Center-align the table data */
 table {
-  width: 50%;
+  width: 100%; /* Make the table responsive */
   margin: 0 auto;
   /* Center the table horizontally */
 }
@@ -79,17 +78,17 @@ figure table tr.header {
   color: #fff;
 }
 
-/* Odd Rows Style*/
+/* Odd Rows Style */
 tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
 
-/* Even Rows Style*/
+/* Even Rows Style */
 tr:nth-child(even) {
   background-color: #ddd;
 }
 
-/* Footer Row Style*/
+/* Footer Row Style */
 tr.total {
   font-weight: bold;
 }
@@ -101,8 +100,8 @@ figcaption {
 }
 
 .reset-link {
-  display: block;        
-  margin: 20px auto;     
+  display: block;
+  margin: 20px auto;
   padding: 10px 15px;
   background-color: #007BFF;
   color: white;
@@ -111,12 +110,20 @@ figcaption {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: fit-content;   
+  width: fit-content;
 }
 
 .reset-link:hover {
   background-color: #0056b3;
 }
+
 #infoForm {
-font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+}
+
+/* Media Query for Small Devices (576px and up) */
+@media (min-width: 576px) {
+  main {
+    margin: 0 20%;
+  }
 }
