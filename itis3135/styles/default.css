@@ -128,3 +128,57 @@ figcaption {
     margin: 0 20%;
   }
 }
+
+/* Style for the calculator container */
+#calc-container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style for the calculator display */
+#calc-display {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: right;
+}
+
+/* Style for calculator buttons */
+.calc-button {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Style for numeric buttons */
+.calc-num {
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+/* Style for operator buttons */
+.calc-operator {
+  background-color: #f0c040;
+  border: 1px solid #c38733;
+  color: #fff;
+}
+
+/* Style for the clear button */
+#calc-clear {
+  background-color: #f04040;
+  border: 1px solid #c33333;
+  color: #fff;
+}
+
+/* Style for the equals button */
+#calc-equals {
+  background-color: #40c240;
+  border: 1px solid #33c333;
+  color: #fff;
+}
