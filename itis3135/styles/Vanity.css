@@ -1,54 +1,61 @@
-body {
-    background: burlywood;
-    margin: 0;
+/* Navbar Styling */
+.navwrapper {
+    background: #ffffff; /* White background */
+    color: #333333; /* Dark text color */
+    font-size: 16px;
+    padding: 15px 20px; /* Padding for the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
   
-  /* Navbar */
-  
-  .navwrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    color: white;
+  .navwrapper .nav-links a {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s ease;
   }
   
-  .navwrapper .nav-logo {
-    padding-left: 20px;
+  .navwrapper .nav-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
   }
   
-  .navwrapper .nav-links {
-    display: flex;
-    gap: 20px;
-    padding-right: 20px;
-    color: white;
-  }
-  
-  /* Hero Content */
-  
+  /* Hero Section Styling */
   .hero {
+    background: #f5f5f5; /* Light grey background */
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 100vh;
   }
   
   .hero .hero-logo {
-    background: black;
+    background: #ffffff; /* White background */
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .hero .hero-logo img {
+    max-width: 80%;
+    max-height: 80%;
   }
   
   .hero .hero-content {
-    background: grey;
+    background: #ffffff; /* White background */
     border-radius: 10px;
-    width: 600px;
-    height: 750px;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
-
+  
+  /* Footer Styling */
   footer {
+    background: #333333; /* Dark background */
+    color: #ffffff; /* Light text color */
+    padding: 20px 0;
     text-align: center;
   }
+  

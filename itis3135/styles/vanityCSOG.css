@@ -1,0 +1,54 @@
+body {
+    background: burlywood;
+    margin: 0;
+  }
+  
+  /* Navbar */
+  
+  .navwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+  }
+  
+  .navwrapper .nav-logo {
+    padding-left: 20px;
+  }
+  
+  .navwrapper .nav-links {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    color: white;
+  }
+  
+  /* Hero Content */
+  
+  .hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .hero .hero-logo {
+    background: black;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .hero .hero-content {
+    background: grey;
+    border-radius: 10px;
+    width: 600px;
+    height: 750px;
+  }
+
+  footer {
+    text-align: center;
+  }
