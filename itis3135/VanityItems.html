@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Vanity.css">
+</head>
+
+<body>
+    <div class="navwrapper">
+        <div class="nav-logo">
+            <h2>Vanity Landing</h2>
+        </div>
+        <div class="nav-links">
+            <a href="VanityItems.html">
+                <p>Items</p>
+            </a>
+            <a href="VanityFAQ.html">
+                <p>FAQ</p>
+            </a>
+            <a href="VanityContact.html">
+                <p>Contact Us</p>
+            </a>
+            <a href="VanityAbout.html">
+                <p>About Vanity</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="item-gallery">
+        <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="item-wrapper">
+            <!-- Item 1 -->
+            <div class="item-header">
+                <h3>Item 1</h3>
+                <img src="path_to_your_image_1.jpg" alt="Item 1 Image">
+                <p>Description of Item 1</p>
+                <a href="item1_details.html">View Details</a>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item-header">
+                <h3>Item 2</h3>
+                <img src="path_to_your_image_2.jpg" alt="Item 2 Image">
+                <p>Description of Item 2</p>
+                <a href="item2_details.html">View Details</a>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item-header">
+                <h3>Item 3</h3>
+                <img src="path_to_your_image_3.jpg" alt="Item 3 Image">
+                <p>Description of Item 3</p>
+                <a href="item3_details.html">View Details</a>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item-header">
+                <h3>Item 4</h3>
+                <img src="path_to_your_image_4.jpg" alt="Item 4 Image">
+                <p>Description of Item 4</p>
+                <a href="item4_details.html">View Details</a>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item-header">
+                <h3>Item 5</h3>
+                <img src="path_to_your_image_5.jpg" alt="Item 5 Image">
+                <p>Description of Item 5</p>
+                <a href="item5_details.html">View Details</a>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="item-header">
+                <h3>Item 6</h3>
+                <img src="path_to_your_image_6.jpg" alt="Item 6 Image">
+                <p>Description of Item 6</p>
+                <a href="item6_details.html">View Details</a>
+            </div>
+        </div>
+        <div class="next" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+
+    <div data-include="components/vanityFooter.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/VanityItems.js"></script>
+</body>
+
+</html>
