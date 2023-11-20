@@ -69,6 +69,7 @@ footer {
     /* Light text color */
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 body {
