@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Vanity.css">
+</head>
+
+<body>
+    <div class="navwrapper">
+        <div class="nav-logo">
+            <h2><a href="VanityLanding.html" style="text-decoration: none; color: gold;">Vanity Landing</a></h2>
+        </div>
+        <div class="nav-links">
+            <a href="VanityItems.html">
+                <p>Items</p>
+            </a>
+            <a href="VanityFAQ.html">
+                <p>FAQ</p>
+            </a>
+            <a href="VanityContact.html">
+                <p>Contact Us</p>
+            </a>
+            <a href="VanityAbout.html">
+                <p>About Vanity</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div data-include="components/vanityFooter.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+
+</html>
