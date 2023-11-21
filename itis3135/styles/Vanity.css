@@ -280,7 +280,7 @@ body {
 
 /* Contact Us Page */
 .contact-form {
-    width: 90%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     max-width: 600px; /* Set a maximum width */
     margin: 0 auto;
     padding: 20px;
@@ -304,7 +304,7 @@ body {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
