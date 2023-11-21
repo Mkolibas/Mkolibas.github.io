@@ -24,7 +24,7 @@
 
 /* Hero Section Styling */
 .hero {
-    background: #f5f5f5;
+    background: burlywood;
     /* Light grey background */
     height: 80vh;
     display: flex;
@@ -70,6 +70,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     position: relative;
+    bottom: auto;
 }
 
 body {
