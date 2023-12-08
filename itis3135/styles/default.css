@@ -204,8 +204,9 @@ figcaption {
 }
 
 /* Hide the images by default */
-.mySlides {
-  display: none;
+.mySlides img {
+  height: 300px;
+  width: auto;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
