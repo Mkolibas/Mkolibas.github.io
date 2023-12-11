@@ -458,41 +458,6 @@ nav ul li a {
     object-fit: contain;
 }
 
-/* Additional styles for customer reviews */
-.customer-reviews {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-}
-
-.customer-review {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-left: 5px solid #333;
-    background-color: #fff;
-}
-
-.customer-review p {
-    margin: 0;
-}
-
-.customer-review strong {
-    font-weight: bold;
-    color: #333;
-}
-
-.customer-review .stars {
-    color: gold;
-}
-
-@media screen and (max-width: 768px) {
-    .customer-reviews {
-        padding: 10px;
-    }
-}
-
 
 /* Define the circular shape for the logo */
 .hero-logo {
