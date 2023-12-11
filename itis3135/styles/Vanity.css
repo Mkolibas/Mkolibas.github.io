@@ -117,23 +117,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    /* Black background */
-    height: 500px;
-    /* Adjust height as needed */
+    background: #222;
+    height: 60vh;
     width: 80%;
     /* Adjust width as needed */
-    margin: 0 auto;
+    margin: 20px auto;
     /* Center the gallery */
     overflow: hidden;
     border-radius: 10px;
     position: relative;
     color: gold;
-    /* Gold text color */
 }
 
 .item-gallery .item-wrapper {
     display: flex;
+    justify-content: space-between;
     transition: transform 0.5s ease-in-out;
     width: 100%;
 }
@@ -144,13 +142,15 @@ body {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    display: none;
+    display: block;
+    background: #222;
 }
 
 .item-gallery img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .prev,
@@ -169,18 +169,26 @@ body {
     /* Text color for arrows */
 }
 
-.prev:hover,
-.next:hover {
-    background-color: rgba(255, 215, 0, 1);
-    /* Solid gold color on hover */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(255, 215, 0, 0.8); /* Gold color with transparency */
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    color: black; /* Text color for arrows */
 }
 
 .prev {
-    left: 10px;
+    left: 0; /* Adjusted left position */
 }
 
 .next {
-    right: 10px;
+    right: 0; /* Adjusted right position */
 }
 
 /* FAQ STYLE */
@@ -286,9 +294,10 @@ body {
     /* Set a maximum width */
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgb(65, 62, 62);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: gold;
 }
 
 .contact-form h2 {
@@ -310,12 +319,12 @@ body {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid gray;
 }
 
 .contact-form input[type="submit"] {
     background-color: #fca311;
-    color: #fff;
+    color: gray;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -429,26 +438,18 @@ nav ul li a {
     width: 100%;
     height: auto;
     border-radius: 50%;
-    /* Add more styles as needed */
 }
 
-/* Content Alignment */
 .top .top-content,
 .bottom .bottom-content {
     margin-left: 2rem;
-    /* Add more styles as needed */
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
-
     .top .image img,
     .bottom .bottom-image img {
         width: 80%;
-        /* Adjust styles for smaller screens */
     }
-
-    /* Adjust other styles as necessary */
 }
 
 .item-header img {
@@ -456,6 +457,42 @@ nav ul li a {
     height: 200px;
     object-fit: contain;
 }
+
+/* Additional styles for customer reviews */
+.customer-reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.customer-review {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #333;
+    background-color: #fff;
+}
+
+.customer-review p {
+    margin: 0;
+}
+
+.customer-review strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-review .stars {
+    color: gold;
+}
+
+@media screen and (max-width: 768px) {
+    .customer-reviews {
+        padding: 10px;
+    }
+}
+
 
 /* Define the circular shape for the logo */
 .hero-logo {
@@ -475,4 +512,8 @@ nav ul li a {
     height: 100%;
     object-fit: cover;
     /* Ensures the entire image is visible within the circle */
+}
+
+.top-section .image {
+    margin-bottom: 20px;
 }
